@@ -1,0 +1,13 @@
+{
+  "name": "fesoares.github.io",
+  "version": "1.0.0",
+  "main": "index.html",
+  "repository": "https://github.com/fesoares/fesoares.github.io.git",
+  "author": "Felipe Soares <felipe4dev@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "bootstrap": "^4.5.0",
+    "sass": "^1.26.10"
+  }
+}
