@@ -1,0 +1,71 @@
+{
+  "devFiles": [],
+  "lowPriorityFiles": [
+    "static/cQWHdmbPUBQb1OSXzJ4p6/_buildManifest.js",
+    "static/cQWHdmbPUBQb1OSXzJ4p6/_ssgManifest.js"
+  ],
+  "pages": {
+    "/": [
+      "static/runtime/webpack-c212667a5f965e81e004.js",
+      "static/chunks/framework.c6faae2799416a6da8e8.js",
+      "static/runtime/main-60464f2fe033d88d77e9.js"
+    ],
+    "/_app": [
+      "static/runtime/webpack-c212667a5f965e81e004.js",
+      "static/chunks/framework.c6faae2799416a6da8e8.js",
+      "static/css/378865da42f555f8699e.css",
+      "static/chunks/7c8ad620.399f109fdec6a50191d5.js",
+      "static/chunks/b48fb2645aa9e430f016ed7e554df9d38275ec2a.a1a019ce3158294c8679.js",
+      "static/css/2f59cc9022795ebb4b08.css",
+      "static/runtime/main-60464f2fe033d88d77e9.js"
+    ],
+    "/_error": [
+      "static/runtime/webpack-c212667a5f965e81e004.js",
+      "static/chunks/framework.c6faae2799416a6da8e8.js",
+      "static/runtime/main-60464f2fe033d88d77e9.js"
+    ],
+    "/_polyfills": [
+      "static/runtime/polyfills-2f74f7d9820760171318.js"
+    ],
+    "/components/about": [
+      "static/runtime/webpack-c212667a5f965e81e004.js",
+      "static/chunks/framework.c6faae2799416a6da8e8.js",
+      "static/runtime/main-60464f2fe033d88d77e9.js"
+    ],
+    "/components/contact": [
+      "static/runtime/webpack-c212667a5f965e81e004.js",
+      "static/chunks/framework.c6faae2799416a6da8e8.js",
+      "static/runtime/main-60464f2fe033d88d77e9.js"
+    ],
+    "/components/education": [
+      "static/runtime/webpack-c212667a5f965e81e004.js",
+      "static/chunks/framework.c6faae2799416a6da8e8.js",
+      "static/runtime/main-60464f2fe033d88d77e9.js"
+    ],
+    "/components/experience": [
+      "static/runtime/webpack-c212667a5f965e81e004.js",
+      "static/chunks/framework.c6faae2799416a6da8e8.js",
+      "static/runtime/main-60464f2fe033d88d77e9.js"
+    ],
+    "/components/header": [
+      "static/runtime/webpack-c212667a5f965e81e004.js",
+      "static/chunks/framework.c6faae2799416a6da8e8.js",
+      "static/runtime/main-60464f2fe033d88d77e9.js"
+    ],
+    "/components/interests": [
+      "static/runtime/webpack-c212667a5f965e81e004.js",
+      "static/chunks/framework.c6faae2799416a6da8e8.js",
+      "static/runtime/main-60464f2fe033d88d77e9.js"
+    ],
+    "/components/skills": [
+      "static/runtime/webpack-c212667a5f965e81e004.js",
+      "static/chunks/framework.c6faae2799416a6da8e8.js",
+      "static/runtime/main-60464f2fe033d88d77e9.js"
+    ],
+    "/index": [
+      "static/runtime/webpack-c212667a5f965e81e004.js",
+      "static/chunks/framework.c6faae2799416a6da8e8.js",
+      "static/runtime/main-60464f2fe033d88d77e9.js"
+    ]
+  }
+}
