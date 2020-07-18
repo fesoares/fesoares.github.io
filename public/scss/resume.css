@@ -76,6 +76,10 @@ h2 {
   text-align: center;
 }
 
+.alerts {
+  margin: 15px 0;
+}
+
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
   text-transform: uppercase;
@@ -158,4 +162,4 @@ a:hover, a:focus, a:active {
   color: #3520d7;
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=resume.css.map */

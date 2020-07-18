@@ -10,7 +10,7 @@
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
-  <link rel="stylesheet" href="public/scss/index.css">
+  <link rel="stylesheet" href="public/scss/resume.css">
 
   <link rel="shortcut icon" href="public/favicon.ico" type="image/x-icon">
   <link rel="icon" href="public/favicon.ico" type="image/x-icon">
@@ -317,12 +317,23 @@
         <h2 class="mb-5">Contact</h2>
         <form>
           <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            <label for="inputEmail">Email address</label>
+            <input type="email" class="form-control" id="inputEmail" aria-describedby="textEmail" required>
+            <small id="textEmail" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <div class="invalid-feedback">
+            You must add your email before submitting.
+          </div>
+          <button type="button" class="btn btn-primary" onclick="send()">Submit</button>
         </form>
+        <div class="alerts">
+          <div class="alert alert-success d-none" role="alert" id="success">
+            Mail successfully sent!
+          </div>
+          <div class="alert alert-danger d-none" role="alert" id="error">
+            Failed to send mail, please try again!
+          </div>
+        </div>
       </div>
     </section>
   </div>
@@ -333,6 +344,33 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
+
+  <script>
+    async function send() {
+      let email = document.querySelector('#inputEmail').value
+      let request = await fetch('http://localhost:3333/contact', { 
+        method: 'post',
+        body: {
+          email: email
+        }
+      })
+      if(request.status === 200) {
+        console.log(request);
+        let element = document.querySelector('#success');
+        element.classList.remove('d-none');
+      } else {
+        console.error(err);
+        let element = document.querySelector('#error');
+        element.classList.remove('d-none');
+      }
+    }
+
+    let menu = document.querySelector('.navbar-nav');
+    menu.addEventListener('click', function() {
+      document.querySelector('.navbar-collapse')
+        .classList.remove('show');
+    })
+  </script>
 </body>
 
 </html>

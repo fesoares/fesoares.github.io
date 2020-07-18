@@ -5,6 +5,10 @@
   "repository": "https://github.com/fesoares/fesoares.github.io.git",
   "author": "Felipe Soares <felipe4dev@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "sass:single": "sass public/scss/resume.scss public/scss/resume.css",
+    "sass:watch": "sass --watch public/scss"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",
     "bootstrap": "^4.5.0",
