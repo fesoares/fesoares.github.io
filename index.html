@@ -5,6 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Felipe Soares</title>
+  <meta name="description" content="Web and App development">
+  <meta name="keywords" content="HTML, CSS, JavaScript, ReactJS, React Native, App, Developer, Desenvolvedor, Aplicativos, Programador">
+  <meta name="author" content="Felipe Soares">
+  
+  <!-- <script type="module">
+    var options = {
+      persist: true,
+      languages: ["pt", "en"],
+      defaultLanguage: "en",
+      detectLanguage: true,
+      filesLocation: "/i18n"
+    };
+    import Translator from "./translator.js";
+
+    var translator = new Translator(options);
+    translator.load(lang);
+  </script> -->
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -31,7 +48,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#about" data-i18n="menu.about" data-i18n-attr="about"
+            title="About">
+            About
+          </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#experience">Experience</a>
@@ -45,9 +65,9 @@
         <li class="nav-item">
           <a class="nav-link" href="#interests">Interests</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" href="#contact">Contact</a>
-        </li>
+        </li> -->
       </ul>
     </div>
   </nav>
@@ -59,7 +79,7 @@
           Felipe <span class="text-primary">Soares</span>
         </h1>
         <div class="subheading mb-5">
-          Sorocaba · São Paulo, CEP 18077-080 · (15) 99801-8584 ·
+          Sorocaba · São Paulo · 
           <a href="mailto:felipe4dev@gmail.com">felipe4dev@gmail.com</a>
         </div>
         <p class="mb-3">
@@ -74,7 +94,7 @@
         </p>
         <ul class="list-inline list-social-icons mb-0">
           <li class="list-inline-item">
-            <a href="https://www.facebook.com/felipe.soares.921025" target="_blank">
+            <a href="https://www.facebook.com/felipe.soares.921025" target="_blank" alt="Link to my facebook page">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
@@ -82,7 +102,7 @@
             </a>
           </li>
           <li class="list-inline-item">
-            <a href="https://www.linkedin.com/in/felipe-soares-0a4244115/" target="_blank">
+            <a href="https://www.linkedin.com/in/felipe-soares-0a4244115/" target="_blank" alt="Link to my linkedin page">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
@@ -90,10 +110,26 @@
             </a>
           </li>
           <li class="list-inline-item">
-            <a href="https://github.com/fesoares" target="_blank">
+            <a href="https://github.com/fesoares" target="_blank" alt="Link to my github page">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fab fa-github-alt fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://twitter.com/_xfesl" target="_blank" alt="Link to my twitter page">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://dev.to/fesoares" target="_blank" alt="Link to my dev.to page">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fab fa-dev fa-stack-1x fa-inverse"></i>
               </span>
             </a>
           </li>
@@ -186,83 +222,83 @@
         <div class="subheading mb-3">Programming Languages &amp; Tools</div>
         <ul class="list-inline list-icons">
           <li class="list-inline-item">
-            <i class="devicon-html5-plain"></i>
+            <i class="devicon-html5-plain" alt="HTML5"></i>
             <span class="list-icon-label">HTML5</span>
           </li>
           <li class="list-inline-item">
-            <i class="devicon-css3-plain"></i>
+            <i class="devicon-css3-plain" alt="CSS3"></i>
             <span class="list-icon-label">CSS3</span>
           </li>
           <li class="list-inline-item">
-            <i class="devicon-javascript-plain"></i>
+            <i class="devicon-javascript-plain" alt="JavaScript"></i>
             <span class="list-icon-label">JavaScript</span>
           </li>
           <li class="list-inline-item">
-            <i class="devicon-typescript-plain"></i>
+            <i class="devicon-typescript-plain" alt="TypeScript"></i>
             <span class="list-icon-label">TypeScript</span>
           </li>
           <li class="list-inline-item">
-            <i class="devicon-jquery-plain"></i>
+            <i class="devicon-jquery-plain" alt="jQuery"></i>
             <span class="list-icon-label">jQuery</span>
           </li>
           <li class="list-inline-item">
-            <i class="devicon-sass-original"></i>
+            <i class="devicon-sass-original" alt="Sass"></i>
             <span class="list-icon-label">Sass</span>
           </li>
           <li class="list-inline-item">
-            <i class="devicon-bootstrap-plain"></i>
+            <i class="devicon-bootstrap-plain" alt="Bootstrap"></i>
             <span class="list-icon-label">Bootstrap</span>
           </li>
           <li class="list-inline-item">
-            <i class="devicon-react-original"></i>
+            <i class="devicon-react-original" alt="ReactJS/React Native"></i>
             <span class="list-icon-label">React</span>
           </li>
           <li class="list-inline-item">
-            <i class="devicon-vuejs-plain"></i>
+            <i class="devicon-vuejs-plain" alt="Vue.js"></i>
             <span class="list-icon-label">Vue.js</span>
           </li>
           <li class="list-inline-item">
-            <i class="devicon-angularjs-plain"></i>
+            <i class="devicon-angularjs-plain" alt="AngularJS"></i>
             <span class="list-icon-label">AngularJS</span>
           </li>
           <li class="list-inline-item">
-            <i class="devicon-ionic-original"></i>
+            <i class="devicon-ionic-original" alt="Ionic"></i>
             <span class="list-icon-label">Ionic</span>
           </li>
           <li class="list-inline-item">
-            <i class="devicon-git-plain"></i>
+            <i class="devicon-git-plain" alt="Git"></i>
             <span class="list-icon-label">Git</span>
           </li>
           <li class="list-inline-item">
-            <i class="devicon-npm-original-wordmark"></i>
+            <i class="devicon-npm-original-wordmark" alt="npm"></i>
             <span class="list-icon-label">npm</span>
           </li>
           <li class="list-inline-item">
-            <i class="devicon-nodejs-plain"></i>
+            <i class="devicon-nodejs-plain" alt="Node.js"></i>
             <span class="list-icon-label">Node.js</span>
           </li>
           <li class="list-inline-item">
-            <i class="devicon-php-plain"></i>
+            <i class="devicon-php-plain" alt="PHP"></i>
             <span class="list-icon-label">PHP</span>
           </li>
           <li class="list-inline-item">
-            <i class="devicon-laravel-plain"></i>
+            <i class="devicon-laravel-plain" alt="Laravel"></i>
             <span class="list-icon-label">Laravel</span>
           </li>
           <li class="list-inline-item">
-            <i class="devicon-mysql-plain"></i>
+            <i class="devicon-mysql-plain" alt="MySQL"></i>
             <span class="list-icon-label">MySQL</span>
           </li>
           <li class="list-inline-item">
-            <i class="devicon-postgresql-plain"></i>
+            <i class="devicon-postgresql-plain" alt="PostgreSQL"></i>
             <span class="list-icon-label">PostgreSQL</span>
           </li>
           <li class="list-inline-item">
-            <i class="devicon-amazonwebservices-plain-wordmark"></i>
+            <i class="devicon-amazonwebservices-plain-wordmark" alt="Amazon Web Services"></i>
             <span class="list-icon-label">AWS</span>
           </li>
           <li class="list-inline-item">
-            <i class="devicon-docker-plain"></i>
+            <i class="devicon-docker-plain" alt="Docker"></i>
             <span class="list-icon-label">Docker</span>
           </li>
         </ul>
@@ -312,7 +348,8 @@
       </div>
     </section>
 
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="contact">
+    <!-- WIP -->
+    <!-- <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="contact">
       <div class="my-auto">
         <h2 class="mb-5">Contact</h2>
         <form>
@@ -335,7 +372,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
   </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -344,17 +381,16 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
-
   <script>
     async function send() {
       let email = document.querySelector('#inputEmail').value
-      let request = await fetch('http://localhost:3333/contact', { 
+      let request = await fetch('http://localhost:3333/contact', {
         method: 'post',
         body: {
           email: email
         }
       })
-      if(request.status === 200) {
+      if (request.status === 200) {
         console.log(request);
         let element = document.querySelector('#success');
         element.classList.remove('d-none');
@@ -366,7 +402,7 @@
     }
 
     let menu = document.querySelector('.navbar-nav');
-    menu.addEventListener('click', function() {
+    menu.addEventListener('click', function () {
       document.querySelector('.navbar-collapse')
         .classList.remove('show');
     })
