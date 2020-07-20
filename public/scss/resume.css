@@ -47,6 +47,10 @@ h2 {
   font-size: 3.5rem;
 }
 
+.navbar-nav > .nav-item {
+  padding: 5px 0;
+}
+
 .highlight {
   color: #6c5ce7;
   font-weight: 600;

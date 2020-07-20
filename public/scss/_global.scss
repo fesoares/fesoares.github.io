@@ -36,6 +36,10 @@ h2 {
   font-size: 3.5rem;
 }
 
+.navbar-nav > .nav-item {
+  padding: 5px 0;
+}
+
 .highlight {
   color: $primary;
   font-weight: 600;
