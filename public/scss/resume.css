@@ -47,6 +47,11 @@ h2 {
   font-size: 3.5rem;
 }
 
+.highlight {
+  color: #6c5ce7;
+  font-weight: 600;
+}
+
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
