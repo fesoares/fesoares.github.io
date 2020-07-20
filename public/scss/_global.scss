@@ -67,6 +67,7 @@ h2 {
 .list-icons {
   font-size: 3rem;
   .list-inline-item {
+    text-align: center;
     &:hover {
       color: $primary;
     }

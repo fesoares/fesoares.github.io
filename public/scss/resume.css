@@ -76,6 +76,9 @@ h2 {
 .list-icons {
   font-size: 3rem;
 }
+.list-icons .list-inline-item {
+  text-align: center;
+}
 .list-icons .list-inline-item:hover {
   color: #6c5ce7;
 }
