@@ -82,3 +82,16 @@ h2 {
 .alerts {
   margin: 15px 0;
 }
+
+@media only screen and (max-width: 600px) {
+  #about .list-inline-item {
+    margin-right: 0;
+  }
+
+  #skills .list-inline-item {
+    width: 17%;
+    &:not(:last-child) {
+      margin-left: .5rem;
+    }
+  }
+}
