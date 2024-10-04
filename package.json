@@ -10,8 +10,8 @@
     "sass:watch": "sass --watch public/scss"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.14.0",
-    "bootstrap": "^4.5.0",
+    "@fortawesome/fontawesome-free": "^6.6.0",
+    "bootstrap": "^5.3.3",
     "sass": "^1.26.10"
   }
 }
